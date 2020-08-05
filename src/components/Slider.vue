@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import styles from '../assets/sass/variables.scss'
-import utilities from '../js/utilities'
+import styles from '@/assets/sass/variables.scss'
+import utilities from '@/js/utilities'
 export default {
   name: 'slider',
   props: {
