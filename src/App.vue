@@ -26,5 +26,5 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '@/assets/sass/app.scss';
+  @import '@/assets/sass/slider-menu/app.scss';
 </style>
