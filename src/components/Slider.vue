@@ -16,9 +16,9 @@
     <nav class="navIcon" :style="[userStyles.navIcon, iconDirection]">
       <a href="javscript:void(0)" @click.prevent="toggleMenu" data-test-ref="navMenuLink">
         <svg width="30" height="30">
-          <path d="M0,5 30,5" :stroke="styles['menu-icon-color']" stroke-width="5"/>
-          <path d="M0,14 30,14" :stroke="styles['menu-icon-color']" stroke-width="5"/>
-          <path d="M0,23 30,23" :stroke="styles['menu-icon-color']" stroke-width="5"/>
+          <path d="M0,5 30,5" stroke="#333333" stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#333333" stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#333333" stroke-width="5"/>
         </svg>
       </a>
     </nav>

@@ -424,25 +424,6 @@ module.exports = getBuiltIn('navigator', 'userAgent') || '';
 
 /***/ }),
 
-/***/ "35a3":
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Titillium+Web);"]);
-// Module
-exports.push([module.i, "", ""]);
-// Exports
-exports.locals = {
-	"background-color": "#fff",
-	"menu-icon-color": "#999"
-};
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ "37e8":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -854,6 +835,21 @@ module.exports = function (it, key) {
   return hasOwnProperty.call(it, key);
 };
 
+
+/***/ }),
+
+/***/ "54cb":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("bad5");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("e3a5b044", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -1293,21 +1289,6 @@ module.exports = Object.create || function create(O, Properties) {
   return Properties === undefined ? result : defineProperties(result, Properties);
 };
 
-
-/***/ }),
-
-/***/ "7f91":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("35a3");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("459ad55c", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -1813,6 +1794,25 @@ module.exports = function (name) {
 
 /***/ }),
 
+/***/ "bad5":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Titillium+Web);"]);
+// Module
+exports.push([module.i, "", ""]);
+// Exports
+exports.locals = {
+	"background-color": "#fff",
+	"menu-icon-color": "#333"
+};
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "c04e":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2207,12 +2207,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22c2362f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Slider.vue?vue&type=template&id=a9d5b804&scoped=true&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('nav',{staticClass:"navMenu",style:([_vm.userStyles.navMenu, _vm.menuDirection, _vm.menuWidth])},[_c('a',{staticClass:"closebtn",attrs:{"href":"javscript:void(0)"},on:{"click":function($event){$event.preventDefault();return _vm.closeMenu($event)}}},[_vm._v("×")]),(_vm.links.length)?_vm._l((_vm.links),function(link){return _c('a',{key:link.id,class:link.linkClass ? link.linkClass : 'blabla',style:(link.styles),attrs:{"href":!link.url || link.url === '#' ? 'javscript:void(0)' : link.url},on:{"click":function($event){return _vm.processRouterPush(link)}}},[_vm._v(" "+_vm._s(link.text)+" ")])}):_vm._t("default")],2),_c('nav',{staticClass:"navIcon",style:([_vm.userStyles.navIcon, _vm.iconDirection])},[_c('a',{attrs:{"href":"javscript:void(0)","data-test-ref":"navMenuLink"},on:{"click":function($event){$event.preventDefault();return _vm.toggleMenu($event)}}},[_c('svg',{attrs:{"width":"30","height":"30"}},[_c('path',{attrs:{"d":"M0,5 30,5","stroke":_vm.styles['menu-icon-color'],"stroke-width":"5"}}),_c('path',{attrs:{"d":"M0,14 30,14","stroke":_vm.styles['menu-icon-color'],"stroke-width":"5"}}),_c('path',{attrs:{"d":"M0,23 30,23","stroke":_vm.styles['menu-icon-color'],"stroke-width":"5"}})])])])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"22c2362f-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Slider.vue?vue&type=template&id=8814f0ee&scoped=true&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('nav',{staticClass:"navMenu",style:([_vm.userStyles.navMenu, _vm.menuDirection, _vm.menuWidth])},[_c('a',{staticClass:"closebtn",attrs:{"href":"javscript:void(0)"},on:{"click":function($event){$event.preventDefault();return _vm.closeMenu($event)}}},[_vm._v("×")]),(_vm.links.length)?_vm._l((_vm.links),function(link){return _c('a',{key:link.id,class:link.linkClass ? link.linkClass : 'blabla',style:(link.styles),attrs:{"href":!link.url || link.url === '#' ? 'javscript:void(0)' : link.url},on:{"click":function($event){return _vm.processRouterPush(link)}}},[_vm._v(" "+_vm._s(link.text)+" ")])}):_vm._t("default")],2),_c('nav',{staticClass:"navIcon",style:([_vm.userStyles.navIcon, _vm.iconDirection])},[_c('a',{attrs:{"href":"javscript:void(0)","data-test-ref":"navMenuLink"},on:{"click":function($event){$event.preventDefault();return _vm.toggleMenu($event)}}},[_c('svg',{attrs:{"width":"30","height":"30"}},[_c('path',{attrs:{"d":"M0,5 30,5","stroke":"#333333","stroke-width":"5"}}),_c('path',{attrs:{"d":"M0,14 30,14","stroke":"#333333","stroke-width":"5"}}),_c('path',{attrs:{"d":"M0,23 30,23","stroke":"#333333","stroke-width":"5"}})])])])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/Slider.vue?vue&type=template&id=a9d5b804&scoped=true&
+// CONCATENATED MODULE: ./src/components/Slider.vue?vue&type=template&id=8814f0ee&scoped=true&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.index-of.js
 var es_array_index_of = __webpack_require__("c975");
@@ -2223,8 +2223,8 @@ var es_number_constructor = __webpack_require__("a9e3");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.assign.js
 var es_object_assign = __webpack_require__("cca6");
 
-// EXTERNAL MODULE: ./src/assets/sass/variables.scss
-var variables = __webpack_require__("7f91");
+// EXTERNAL MODULE: ./src/assets/sass/slider-menu/variables.scss
+var variables = __webpack_require__("54cb");
 var variables_default = /*#__PURE__*/__webpack_require__.n(variables);
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
@@ -2295,6 +2295,7 @@ var es_array_slice = __webpack_require__("fb6a");
 //
 //
 //
+// import styles from '@/assets/sass/variables.scss'
 
 
 /* harmony default export */ var Slidervue_type_script_lang_js_ = ({
@@ -2548,7 +2549,7 @@ var component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "a9d5b804",
+  "8814f0ee",
   null
   
 )
